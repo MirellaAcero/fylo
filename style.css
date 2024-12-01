@@ -367,6 +367,10 @@ footer .social li {
     text-align: justify;
     padding: 90px 25px;
   }
+  .main .productive .text h2{
+    padding-right: 0;
+  }
+    
   .main .testimonials {
     padding: 0 30px;
     padding-bottom: 120px;

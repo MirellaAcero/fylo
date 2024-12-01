@@ -1,0 +1,553 @@
+// FONT
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+$font:"Raleway", serif;
+// $font-body:"Open Sans", sans-serif;
+$size-body:14px;
+
+//PRIMARY
+
+$darkblue-back:hsl(217, 28%, 15%);
+$darkblue-main: hsl(216deg 30.3% 12.94%);
+$darkblue-backfooter:hsl(216, 53%, 9%);
+$darkblue-backtestimonials:hsl(219, 30%, 18%);
+
+//ACCENT
+
+$cyan:hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$red:hsl(0, 100%, 63%);
+
+//NEUTRAL
+
+$white:hsl(0, 0%, 100%);
+
+//BACKGROUND
+
+$curve-desktop: url(images/bg-curvy-desktop.svg);
+$curve-mobile: url(images/bg-curvy-mobile.svg);
+
+
+//INIZIO STYLE
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-size: $size-body;
+    font-family: $font;
+    color: $white;
+    font-weight: 100;
+}
+
+h1, h2, h3, a {
+    font-family: $font;
+}
+
+[class^="col-"], [class*=" col-"]{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    margin-right: 0;
+}
+
+a.call {
+    color: $white;
+    text-decoration: none;
+    padding: 14px 70px;
+    background-image: linear-gradient(to right, $cyan, $blue);
+    border-radius: 25px;
+    font-weight: 600;
+}
+a.call:hover{
+    background: $cyan;
+}
+
+// STYLE HEADER
+
+header{
+    background-color: $darkblue-back;
+    padding: 60px 130px 0 130px;
+    background-image: $curve-desktop ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 0;
+    background-position-y: 740px;
+    padding-bottom: 175px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style: none;
+                padding: 0 16px;
+
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+                a:hover{
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+    .central {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding-top: 65px;
+
+        .text{
+            padding-bottom: 40px;
+            h1 {
+                font-size: 35px;
+                padding-bottom: 28px;
+                margin: 0;
+            }
+            p {
+                padding: 0 82px 45px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+// STYLE FEATURES
+
+.main{
+
+    background-color:$darkblue-main;
+    text-align: center;
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .services{
+        padding: 0 160px;
+        padding-bottom: 120px;
+
+        .anywhere {
+            padding: 20px 65px 80px;
+        }
+        .security {
+            padding: 10px 65px;
+        }
+    }
+    .productive{
+
+        .text {
+            text-align: left;
+            padding: 110px 154px 10px 40px;
+
+            h2{
+                font-weight: 600;
+                padding-right: 67px;
+                padding-bottom: 15px;
+            }
+        }
+        .arrow {
+            color: $cyan;
+            text-decoration: none;
+            padding-bottom: 6px;
+            border-bottom: 1px solid $cyan;
+
+            svg{
+                margin-left: 7px;
+            }
+
+        }
+        .arrow:hover{
+            border-bottom: 1px solid $white;
+            color: $white;
+        }
+        .arrow:hover use{
+            fill:$white ;
+        }
+        
+          
+        
+
+    }
+    
+    .testimonials {
+        padding: 150px 0;
+        padding-bottom: 250px;
+
+        .back{
+            width: 30%;
+            margin: 0 21px;
+
+            img.bg-quotes {
+                position: absolute;
+                left: 88px;
+            }
+
+            .testimonail {
+                background-color: $darkblue-backtestimonials;
+                box-shadow: 15px 10px 10px $darkblue-back;
+                position: relative;
+                top: 35px;
+                padding: 34px 28px;
+                text-align: left;
+                border-radius: 6px;
+
+                .author {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding-top: 20px;
+
+                    .img {
+                        width: 50px;
+                        text-align: left;
+                        margin-right: 12px;
+
+                        img {
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .name {
+                        text-align: left;
+
+                        p{
+                            margin-bottom: 0;
+                            font-weight: 700;
+                            font-size: 11px;
+                            line-height: 0.5;
+                        }
+                        span{
+                            font-size: 8px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+    
+
+    .newsletter-back{
+
+        .newsletter{
+
+            padding:40px 30px;
+            background: $darkblue-back;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            top: 100px;
+            border-radius: 10px;
+            box-shadow: 7px 7px 5px 2px hsl(216deg 58.28% 6.03% / 50%);
+
+            .text{
+
+                h2 {
+                    margin-bottom: 22px;
+                }
+                p {
+                    padding: 0 81px 16px;
+                }
+            }
+
+            .form{
+                display: flex;
+                align-items: baseline;
+                padding: 0 37px;
+
+                a.call-2{
+                    color: $white;
+                    text-decoration: none;
+                    padding: 10px 30px;
+                    background-image: linear-gradient(to right, $cyan, $blue);
+                    border-radius: 25px;
+                    font-weight: 600;
+                }
+                a.call-2:hover{
+                    background: $cyan;
+                }
+            }
+            
+        }
+
+        form{
+            position: relative;
+            width: 70%;
+            margin-right: 28px;
+        }
+        form label{
+            position: relative;
+            display: block;
+        }
+        form input{
+            margin: 10px 0;
+            width: 100%;
+            background: $white;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+        }
+        .emailText{
+            display: block;
+            font-weight: 500;
+            padding: 0px 10px;
+            text-align: left;
+            font-size: 10px;
+        }
+        label.valid .emailText{
+            color: $cyan;
+        }
+        label.invalid .emailText{
+            color:$red;
+        }
+        label.valid::before,
+        label.invalid::before{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 18px;
+            right: 5px;
+            z-index: 100;
+        }
+
+
+    }
+
+}
+
+footer{
+    background-color: $darkblue-backfooter;
+    padding: 168px 0 70px;
+
+    .logo img {
+        padding-bottom: 34px;
+        width: 128px;
+    }
+
+    li{
+        list-style: none;
+
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+
+            .text{
+                display: flex;
+
+                img{
+                    height: 20px;
+                    margin: 5px 25px 0 11px;
+                }
+            }
+    }
+    .mail ul {
+        display: flex;
+        a {
+            padding: 10px;
+            border: 1px solid $white;
+            border-radius: 50%;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                fill: $white;
+                margin: 0;
+            }
+    
+            svg:hover{
+                fill: $cyan;
+            }
+        }
+        a:hover{
+            border: 1px solid $cyan;
+        }
+        
+    }
+    .menu {
+        ul{
+            padding: 0 45px 0;
+
+            li{
+
+                list-style: none;
+                padding-bottom: 20px;
+        
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-weight: 400;
+                }
+                a:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .call {
+        padding-left: 80px;
+
+        img {
+            padding-right: 30px;
+        }
+    }
+    .social li{
+        padding-right: 30px;
+    }
+
+
+}
+
+
+@media (max-width: 1120px){
+
+
+}
+@media (max-width: 920px){
+
+    header{
+        padding: 50px 20px;
+        background-image: $curve-mobile;
+        background-size: 100%;
+        background-position-y: 645px;
+        .logo {
+            width: 32%;
+
+            img {
+                width: 100%;
+            }
+
+        }
+        ul{
+            padding:0 ;
+            li{
+                padding: 0 10px;
+            }
+        }
+        .central{
+            width: 100%;
+            padding: 0 19px;
+
+            img{
+                width: 100%;
+            }
+
+            .text {
+                padding: 50px 0;
+                p{
+                    padding: 0 10px 45px;
+                }
+            }
+        }
+    }
+
+    .main{
+
+        .services {
+            padding: 0 10px;
+            padding-bottom: 100px;
+
+            .anywhere {
+                padding: 20px 65px;
+            }
+        }
+
+        .productive{
+
+            .imgpro{
+                img {
+                    width: 100%;
+                }
+            }
+            .text {
+                text-align: justify;
+                padding: 90px 25px;
+            }
+        }
+
+        .testimonials{
+            padding: 0 30px;
+            padding-bottom: 120px;
+            .back {
+                width: 100%;
+                margin: 0 8px;
+                margin-bottom: 56px;
+            }
+        }
+        .newsletter-back{
+
+            .newsletter{
+                padding: 38px 0;
+
+                .text{
+
+                    p{
+                        padding: 6px 35px;
+                    }
+                }
+                .form {
+                    display: block;
+                }
+                form{
+                    width: 100%;
+                }
+                a.call-2 {
+                    display: block;
+                }
+            }
+        }
+
+
+    }
+    footer{
+        padding: 168px 25px 70px;
+        .logo img {
+            width: 50%;
+        }
+        .call {
+            padding-left: 0;
+            img {
+                padding-right: 18px;
+            }
+        }
+        .mail{
+            ul{
+                padding-left: 10px; 
+            }
+        }
+        .menu{
+            padding-top: 50px;
+            ul{
+                padding-left: 10px;
+            }
+        }
+        .footer {
+            display: block;
+        }
+        .social ul{
+            justify-content: center;
+        }
+    }
+
+}

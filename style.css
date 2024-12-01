@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Raleway", serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 100;
+}
+
+h1, h2, h3, a {
+  font-family: "Raleway", serif;
+}
+
+[class^=col-], [class*=" col-"] {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+}
+
+a.call {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 14px 70px;
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+a.call:hover {
+  background: hsl(176, 68%, 64%);
+}
+
+header {
+  background-color: hsl(217, 28%, 15%);
+  padding: 60px 130px 0 130px;
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 0;
+  background-position-y: 740px;
+  padding-bottom: 175px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  padding: 0 16px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+header nav ul li a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+header .central {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 65px;
+}
+header .central .text {
+  padding-bottom: 40px;
+}
+header .central .text h1 {
+  font-size: 35px;
+  padding-bottom: 28px;
+  margin: 0;
+}
+header .central .text p {
+  padding: 0 82px 45px;
+  margin: 0;
+}
+
+.main {
+  background-color: hsl(216, 30.3%, 12.94%);
+  text-align: center;
+}
+.main h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.main .services {
+  padding: 0 160px;
+  padding-bottom: 120px;
+}
+.main .services .anywhere {
+  padding: 20px 65px 80px;
+}
+.main .services .security {
+  padding: 10px 65px;
+}
+.main .productive .text {
+  text-align: left;
+  padding: 110px 154px 10px 40px;
+}
+.main .productive .text h2 {
+  font-weight: 600;
+  padding-right: 67px;
+  padding-bottom: 15px;
+}
+.main .productive .arrow {
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.main .productive .arrow svg {
+  margin-left: 7px;
+}
+.main .productive .arrow:hover {
+  border-bottom: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+.main .productive .arrow:hover use {
+  fill: hsl(0, 0%, 100%);
+}
+.main .testimonials {
+  padding: 150px 0;
+  padding-bottom: 250px;
+}
+.main .testimonials .back {
+  width: 30%;
+  margin: 0 21px;
+}
+.main .testimonials .back img.bg-quotes {
+  position: absolute;
+  left: 88px;
+}
+.main .testimonials .back .testimonail {
+  background-color: hsl(219, 30%, 18%);
+  box-shadow: 15px 10px 10px hsl(217, 28%, 15%);
+  position: relative;
+  top: 35px;
+  padding: 34px 28px;
+  text-align: left;
+  border-radius: 6px;
+}
+.main .testimonials .back .testimonail .author {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 20px;
+}
+.main .testimonials .back .testimonail .author .img {
+  width: 50px;
+  text-align: left;
+  margin-right: 12px;
+}
+.main .testimonials .back .testimonail .author .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.main .testimonials .back .testimonail .author .name {
+  text-align: left;
+}
+.main .testimonials .back .testimonail .author .name p {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 0.5;
+}
+.main .testimonials .back .testimonail .author .name span {
+  font-size: 8px;
+}
+.main .newsletter-back .newsletter {
+  padding: 40px 30px;
+  background: hsl(217, 28%, 15%);
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 5px 2px hsla(216, 58.28%, 6.03%, 0.5);
+}
+.main .newsletter-back .newsletter .text h2 {
+  margin-bottom: 22px;
+}
+.main .newsletter-back .newsletter .text p {
+  padding: 0 81px 16px;
+}
+.main .newsletter-back .newsletter .form {
+  display: flex;
+  align-items: baseline;
+  padding: 0 37px;
+}
+.main .newsletter-back .newsletter .form a.call-2 {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 10px 30px;
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-radius: 25px;
+  font-weight: 600;
+}
+.main .newsletter-back .newsletter .form a.call-2:hover {
+  background: hsl(176, 68%, 64%);
+}
+.main .newsletter-back form {
+  position: relative;
+  width: 70%;
+  margin-right: 28px;
+}
+.main .newsletter-back form label {
+  position: relative;
+  display: block;
+}
+.main .newsletter-back form input {
+  margin: 10px 0;
+  width: 100%;
+  background: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+.main .newsletter-back .emailText {
+  display: block;
+  font-weight: 500;
+  padding: 0px 10px;
+  text-align: left;
+  font-size: 10px;
+}
+.main .newsletter-back label.valid .emailText {
+  color: hsl(176, 68%, 64%);
+}
+.main .newsletter-back label.invalid .emailText {
+  color: hsl(0, 100%, 63%);
+}
+.main .newsletter-back label.valid::before,
+.main .newsletter-back label.invalid::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 18px;
+  right: 5px;
+  z-index: 100;
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding: 168px 0 70px;
+}
+footer .logo img {
+  padding-bottom: 34px;
+  width: 128px;
+}
+footer li {
+  list-style: none;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer .text {
+  display: flex;
+}
+footer .footer .text img {
+  height: 20px;
+  margin: 5px 25px 0 11px;
+}
+footer .mail ul {
+  display: flex;
+}
+footer .mail ul a {
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+footer .mail ul a svg {
+  height: 20px;
+  width: 20px;
+  fill: hsl(0, 0%, 100%);
+  margin: 0;
+}
+footer .mail ul a svg:hover {
+  fill: hsl(176, 68%, 64%);
+}
+footer .mail ul a:hover {
+  border: 1px solid hsl(176, 68%, 64%);
+}
+footer .menu ul {
+  padding: 0 45px 0;
+}
+footer .menu ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+footer .menu ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+footer .menu ul li a:hover {
+  font-weight: 700;
+}
+footer .call {
+  padding-left: 80px;
+}
+footer .call img {
+  padding-right: 30px;
+}
+footer .social li {
+  padding-right: 30px;
+}
+
+@media (max-width: 920px) {
+  header {
+    padding: 50px 20px;
+    background-image: url(images/bg-curvy-mobile.svg);
+    background-size: 100%;
+    background-position-y: 645px;
+  }
+  header .logo {
+    width: 32%;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header ul {
+    padding: 0;
+  }
+  header ul li {
+    padding: 0 10px;
+  }
+  header .central {
+    width: 100%;
+    padding: 0 19px;
+  }
+  header .central img {
+    width: 100%;
+  }
+  header .central .text {
+    padding: 50px 0;
+  }
+  header .central .text p {
+    padding: 0 10px 45px;
+  }
+  .main .services {
+    padding: 0 10px;
+    padding-bottom: 100px;
+  }
+  .main .services .anywhere {
+    padding: 20px 65px;
+  }
+  .main .productive .imgpro img {
+    width: 100%;
+  }
+  .main .productive .text {
+    text-align: justify;
+    padding: 90px 25px;
+  }
+  .main .testimonials {
+    padding: 0 30px;
+    padding-bottom: 120px;
+  }
+  .main .testimonials .back {
+    width: 100%;
+    margin: 0 8px;
+    margin-bottom: 56px;
+  }
+  .main .newsletter-back .newsletter {
+    padding: 38px 0;
+  }
+  .main .newsletter-back .newsletter .text p {
+    padding: 6px 35px;
+  }
+  .main .newsletter-back .newsletter .form {
+    display: block;
+  }
+  .main .newsletter-back .newsletter form {
+    width: 100%;
+  }
+  .main .newsletter-back .newsletter a.call-2 {
+    display: block;
+  }
+  footer {
+    padding: 168px 25px 70px;
+  }
+  footer .logo img {
+    width: 50%;
+  }
+  footer .call {
+    padding-left: 0;
+  }
+  footer .call img {
+    padding-right: 18px;
+  }
+  footer .mail ul {
+    padding-left: 10px;
+  }
+  footer .menu {
+    padding-top: 50px;
+  }
+  footer .menu ul {
+    padding-left: 10px;
+  }
+  footer .footer {
+    display: block;
+  }
+  footer .social ul {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

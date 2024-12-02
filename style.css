@@ -279,7 +279,7 @@ footer .footer .text img {
 footer .mail ul {
   display: flex;
 }
-footer .mail ul a {
+footer .social ul a {
   padding: 10px;
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
